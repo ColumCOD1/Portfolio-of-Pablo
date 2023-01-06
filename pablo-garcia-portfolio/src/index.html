@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+</head>
+    <title>Portfolio of Pablo Garcia</title>
+</head>
+<body>
+    <header>
+        <style>
+            body {
+              background-image: url('Stacked Wave (1).svg');
+            }
+            </style>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="bar">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+                <div class="bar-3"></div>
+            </div>
+        </nav>
+        <div>
+            <div class="svg-wrapper">
+                <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+                  
+                </svg>
+            </div>
+        </div>
+        <div class="svg-wrapper">
+            <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+              <rect class="shape" height="60" width="320" />
+              <div class="text"> Pablo A. Garcia</div>
+            </svg>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="content text-align: center">
+                <h2 style="text-align: center;">My Mission</h2>
+                <p>After dedicating more 3 years in FullStack development and 5 years in overall web development and marketing. 
+                   I believe I have firm understanding of the theory through accumulated work experience as a freelancer in web development and promotion design. </p>
+
+                <h5 class="socials">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-youtube"></i>
+                </h5>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        const sidenav = () => {
+            const menu = document.querySelector('.bar');
+            const nav = document.querySelector('.menu');
+            
+            menu.addEventListener('click', () => {
+               menu.classList.toggle('bar-active');
+                nav.classList.toggle('nav-active');
+            });
+        }
+        sidenav();
+    </script>
+</body>
+</html>
