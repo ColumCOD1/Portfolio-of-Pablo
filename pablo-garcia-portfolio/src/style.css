@@ -97,6 +97,9 @@ nav{
         display: block;
     }
 }
+body {
+    background-image: url('assets/Stacked\ Wave\ \(1\).svg');
+  }
 html, body {
     text-align: center;
     height: 100%;

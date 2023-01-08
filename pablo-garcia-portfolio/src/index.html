@@ -9,27 +9,23 @@
 </head>
     <title>Portfolio of Pablo Garcia</title>
 </head>
-<body>
+<body id="home-page">
     <header>
-        <style>
-            body {
-              background-image: url('Stacked Wave (1).svg');
-            }
-            </style>
-        <nav>
+        <div id="navbar">
+            <nav>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="navbarfiles/about/about.html">About</a></li>
+                <li><a href="navbarfiles/portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="navbarfiles/services/services.html">Services</a></li>
+                <li><a href="navbarfiles/contact/contact.html">Contact</a></li>
             </ul>
             <div class="bar">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
+                <div class="bar-1"></div> 
             </div>
         </nav>
+    </div>
+       <div>
         <div>
             <div class="svg-wrapper">
                 <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
@@ -40,41 +36,24 @@
         <div class="svg-wrapper">
             <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
               <rect class="shape" height="60" width="320" />
-              <div class="text"> Pablo A. Garcia</div>
+              <div class="text">Pablo Garcia</div>
             </svg>
         </div>
+       </div>
+    
     </header>
     <div class="banner">
         <div class="wrapper">
             <div class="content text-align: center">
                 <h2 style="text-align: center;">My Mission</h2>
                 <p>After dedicating more 3 years in FullStack development and 5 years in overall web development and marketing. 
-                   I believe I have firm understanding of the theory through accumulated work experience as a freelancer in web development and promotion design. </p>
+                   I like to believe I have firm understanding of the theory through accumulated work experience as a freelancer in web development and promotion design. </p>
 
-                <h5 class="socials">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-pinterest"></i>
-                    <i class="fa fa-linkedin"></i>
-                    <i class="fa fa-youtube"></i>
-                </h5>
+
                 
             </div>
         </div>
-    </div>
-    
-    
-    <script>
-        const sidenav = () => {
-            const menu = document.querySelector('.bar');
-            const nav = document.querySelector('.menu');
-            
-            menu.addEventListener('click', () => {
-               menu.classList.toggle('bar-active');
-                nav.classList.toggle('nav-active');
-            });
-        }
-        sidenav();
-    </script>
+    </div>  
+    <script src="index.js"></script> 
 </body>
 </html>
