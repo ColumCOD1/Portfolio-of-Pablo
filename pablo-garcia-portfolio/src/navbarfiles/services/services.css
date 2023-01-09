@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface';
+    font-size: 22px;
+}
+/*nav*/
+
 nav{
     display: -webkit-flex;
     display: -moz-flex;
@@ -8,6 +17,20 @@ nav{
     align-items: center;
     min-height: 10vh;
     background: #590040;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.content {
+    padding: 16px;
+}
+.sticky + .content {
+    padding-top: 60px;
 }
 .logo {
     color: #fffcd6;
@@ -86,5 +109,143 @@ nav{
     }
     .bar{
         display: block;
+    }
+}
+body {
+    width:100%;
+    height:auto;
+  }
+html, body {
+    text-align: center;
+    background-image: url('/pablo-garcia-portfolio/src/assets/Stacked\ Wave\ \(1\).svg');
+    height: 100%;
+    overflow: scroll;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+
+  }
+  .svg-wrapper {
+    position: relative;
+    top: 50%;
+    padding-bottom: 100px;
+    transform: translateY(-50%);
+      margin: 0 auto;
+    width: 320px;  
+  }
+  .shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: lemonchiffon;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+  .text {
+    font-family: 'Abril Fatface';
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: lemonchiffon;
+    top: -48px;
+    position: relative;
+  }
+  .svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+.nav-active{
+    transform: translateX(-100%);
+}
+.bar-active .bar-1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.bar-active .bar-2{
+    opacity: 0;
+}
+.bar-active .bar-3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.banner {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.content h2 {
+    color: lemonchiffon;
+    font-size: 30px;
+}
+  .content p {
+    width: 50%;
+    color: lemonchiffon;
+    font-size: 15px;
+    word-spacing: 4px;
+    margin:auto; 
+    vertical-align: middle;
+    line-height: 2;
+}
+  .content a {
+    /*background: rgb(101, 206, 241);*/
+    text-decoration: none;
+    padding: 15px 30px;
+    color:#A91CF7;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .wrapper {
+    width: 1060px;
+    padding-top: 400px;
+    padding-bottom: 100px;
+    margin: auto;
+    padding-top: 12%;
+   /* background-color: #590040;*/
+}
+.column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .wrapper {
+        width: 75%;
+        padding-top: 26%;
+    }
+    .content{
+        text-align: center;
+    }
+    .content h2 {
+        font-size: 60px;
+    }
+    .content p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .banner {
+        background-position: 60%;
+    }
+    .wrapper {
+        width: 75%;
+        padding-top: 26%;
+    }
+    .content h2 {
+        font-size: 30px;
+    }
+    .content p {
+        width: 100%;
     }
 }

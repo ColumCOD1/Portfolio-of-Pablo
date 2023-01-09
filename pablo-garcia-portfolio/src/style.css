@@ -17,6 +17,22 @@ nav{
     align-items: center;
     min-height: 10vh;
     background: #590040;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.content {
+    padding: 16px;
+}
+.center{
+    background-color: #fffcd6;
+    border-radius: 30px;
+    width: 700px;
+    margin:auto;
+
+}
+.sticky + .content {
+    padding-top: 60px;
 }
 .logo {
     color: #fffcd6;
@@ -96,18 +112,35 @@ nav{
     .bar{
         display: block;
     }
-}
+    .center{
+        background-color: #fffcd6;
+        border-radius: 30px;
+        width: 350px;
+        margin:auto;
+    
+    }
+    .content {
+        padding: 16px;
+}}
 body {
     background-image: url('assets/Stacked\ Wave\ \(1\).svg');
+    width:100%;
+    height:auto;
   }
 html, body {
     text-align: center;
     height: 100%;
-    overflow: hidden;
+    overflow: scroll;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    font-family: 'Abril Fatface';
+
   }
   .svg-wrapper {
     position: relative;
     top: 50%;
+    padding-bottom: 100px;
     transform: translateY(-50%);
       margin: 0 auto;
     width: 320px;  
@@ -156,13 +189,14 @@ html, body {
 }
 
 .content h2 {
-    color: lemonchiffon;
+    color: #590040;
     font-size: 30px;
 }
   .content p {
     width: 50%;
-    color: lemonchiffon;
-    font-size: 15px;
+    color: #590040;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
     word-spacing: 4px;
     margin:auto; 
     vertical-align: middle;
@@ -176,16 +210,11 @@ html, body {
     display: inline-block;
     margin-top: 20px;
   }
-  .socials i {
-    color: #A91CF7;
-    font-size: 18px;
-    margin-right: 25px;
-  }
-  .socials {
-    margin-top: 30px;
-  }
+
   .wrapper {
     width: 1060px;
+    padding-top: 400px;
+    padding-bottom: 100px;
     margin: auto;
     padding-top: 12%;
    /* background-color: #590040;*/
@@ -196,15 +225,19 @@ html, body {
     .wrapper {
         width: 75%;
         padding-top: 26%;
+    
     }
     .content{
         text-align: center;
+        
     }
     .content h2 {
         font-size: 60px;
+        
     }
     .content p {
         width: 100%;
+        
     }
 }
 
@@ -215,11 +248,14 @@ html, body {
     .wrapper {
         width: 75%;
         padding-top: 26%;
+        margin:auto;
     }
     .content h2 {
         font-size: 30px;
+        margin:auto;
     }
     .content p {
         width: 100%;
+        margin:auto;
     }
 }
