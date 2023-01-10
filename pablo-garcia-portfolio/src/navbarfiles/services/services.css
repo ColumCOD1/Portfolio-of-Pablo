@@ -32,17 +32,6 @@ nav{
 .sticky + .content {
     padding-top: 60px;
 }
-.logo {
-    color: #fffcd6;
-    text-transform: capitalize;
-    font-size: 24px;
-    cursor: pointer;
-    font-weight: 900;
-    letter-spacing: 1p
-}
-.logo span{
-    color: #fffcd6; 
-}
 
 .menu{
     display: -webkit-flex;
@@ -133,15 +122,8 @@ html, body {
       margin: 0 auto;
     width: 320px;  
   }
-  .shape {
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-    fill: transparent;
-    stroke: lemonchiffon;
-    border-bottom: 5px solid black;
-    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-  }
+  
+  
   .text {
     font-family: 'Abril Fatface';
     font-size: 28px;
@@ -176,19 +158,34 @@ html, body {
     background-position: center;
 }
 
-.content h2 {
-    color: lemonchiffon;
-    font-size: 30px;
+.heading-boxes > * {
+    background:#590040;
+    border-radius:.30px;
+    overflow:hidden;
+    color:#fffcd6;
 }
-  .content p {
-    width: 50%;
-    color: lemonchiffon;
-    font-size: 15px;
-    word-spacing: 4px;
-    margin:auto; 
-    vertical-align: middle;
-    line-height: 2;
+.heading-boxes > * > h1,
+.heading-boxes > * > h2,
+.heading-boxes > * > h3 {
+    background:#590040;
+    margin:0;
+    color:lemonchiffon;
+    text-decoration: underline;
+    border-radius: 30px;
+    padding:.5em calc(8px + 1.5625vw);
 }
+.heading-boxes > * > div {
+    padding:0 calc(8px + 1.5625vw) .5em;
+}
+
+ol{
+    background-color: lemonchiffon;
+    border-radius: 30px;
+    text-align: center;
+    color:#590040;
+   
+}
+
   .content a {
     /*background: rgb(101, 206, 241);*/
     text-decoration: none;
@@ -204,12 +201,13 @@ html, body {
     padding-bottom: 100px;
     margin: auto;
     padding-top: 12%;
-   /* background-color: #590040;*/
+
 }
 .column {
     float: left;
     width: 25%;
   }
+
   
   /* Clear floats after the columns */
   .row:after {

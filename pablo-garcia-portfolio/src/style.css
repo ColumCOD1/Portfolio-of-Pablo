@@ -34,17 +34,7 @@ nav{
 .sticky + .content {
     padding-top: 60px;
 }
-.logo {
-    color: #fffcd6;
-    text-transform: capitalize;
-    font-size: 24px;
-    cursor: pointer;
-    font-weight: 900;
-    letter-spacing: 1p
-}
-.logo span{
-    color: #fffcd6; 
-}
+
 
 .menu{
     display: -webkit-flex;
