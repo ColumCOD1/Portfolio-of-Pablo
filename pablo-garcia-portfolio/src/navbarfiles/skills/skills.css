@@ -101,10 +101,6 @@ nav{
     }
 }
 body {
-    width:100%;
-    height:auto;
-  }
-html, body {
     text-align: center;
     background-image: url('/pablo-garcia-portfolio/src/assets/Stacked\ Wave\ \(1\).svg');
     height: 100%;
@@ -114,15 +110,6 @@ html, body {
     width: 100%;
 
   }
-  .svg-wrapper {
-    position: relative;
-    top: 50%;
-    padding-bottom: 100px;
-    transform: translateY(-50%);
-      margin: 0 auto;
-    width: 320px;  
-  }
-  
   
   .text {
     font-family: 'Abril Fatface';
@@ -158,7 +145,7 @@ html, body {
     background-position: center;
 }
 
-.heading-boxes > * {
+/*.heading-boxes > * {
     background:#590040;
     border-radius:.30px;
     overflow:hidden;
@@ -176,7 +163,7 @@ html, body {
 }
 .heading-boxes > * > div {
     padding:0 calc(8px + 1.5625vw) .5em;
-}
+}*/
 
 ol{
     background-color: lemonchiffon;
@@ -247,3 +234,33 @@ ol{
         width: 100%;
     }
 }
+.accordion {
+    background-color: #fffcd6;
+    text-decoration: underline;
+    color: #590040;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border:none;
+    text-align: center;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 30px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #590040;
+    color:#fffcd6;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #590040;
+    border-radius: 30px;
+    color:#fffcd6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
